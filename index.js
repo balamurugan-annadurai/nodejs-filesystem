@@ -36,7 +36,7 @@ app.get('/createfile', (req, res) => {
 app.get('/showfiles', (req, res) => {
     
     let folderPath = 'TimeStamp';
-    let data = fs.readdirSync(folderPath, 'utf8');
+    let data = fs.readdirSync(folderPath);
     
     res.status(200).send(data)
 })
